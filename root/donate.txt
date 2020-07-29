@@ -1,0 +1,1 @@
+DB Browser for SQLite: https://www.patreon.com/db4s

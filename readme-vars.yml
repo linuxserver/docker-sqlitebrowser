@@ -1,0 +1,43 @@
+---
+
+# project information
+project_name: sqlitebrowser
+project_url: "https://sqlitebrowser.org/"
+project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sqlitebrowser-banner.png"
+project_blurb: "[DB Browser for SQLite]({{ project_url }}) is a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite."
+project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
+project_blurb_optional_extras_enabled: false
+
+# supported architectures
+available_architectures:
+  - { arch: "{{ arch_x86_64 }}", tag: "latest"}
+  - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
+  - { arch: "{{ arch_armhf }}", tag: "arm32v7-latest"}
+
+# development version
+development_versions: false
+
+# container parameters
+common_param_env_vars_enabled: true
+param_container_name: "{{ project_name }}"
+param_usage_include_env: true
+param_env_vars:
+  - { env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London." }
+param_usage_include_vols: true
+param_volumes:
+  - { vol_path: "/config", vol_host_path: "/path/to/config", desc: "Users home directory in the container, stores program settings and potentially dump files." }
+param_usage_include_ports: true
+param_ports:
+  - { external_port: "3000", internal_port: "3000", port_desc: "WireShark desktop gui, only use this if you are not using host mode and sniffing Docker network traffic." }
+
+# application setup block
+app_setup_block_enabled: true
+app_setup_block: |
+  The application can be accessed at:
+  
+  * http://yourhost:3000/
+
+
+# changelog
+changelogs:
+  - { date: "29.07.20:", desc: "Initial release." }
