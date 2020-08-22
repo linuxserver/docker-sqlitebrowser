@@ -387,7 +387,7 @@ sed4.4-2
 sensible-utils0.0.12
 shared-mime-info1.9-2
 software-properties-common0.96.24.32.14
-sqlitebrowser3.11.200-0~2292~201907201457~ubuntu18.04.1
+sqlitebrowser3.12.0-0~2756~202008212354~ubuntu18.04.1
 ssl-cert1.0.39
 sudo1.8.21p2-3ubuntu1.2
 sysvinit-utils2.88dsf-59.10ubuntu1
