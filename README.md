@@ -104,7 +104,7 @@ Container images are configured using parameters passed at runtime (such as thos
 
 | Parameter | Function |
 | :----: | --- |
-| `-p 3000` | WireShark desktop gui, only use this if you are not using host mode and sniffing Docker network traffic. |
+| `-p 3000` | Sqlitebrowser desktop gui, only use this if you are not using host mode and sniffing Docker network traffic. |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Europe/London` | Specify a timezone to use EG Europe/London. |
@@ -220,4 +220,5 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **20.01.21:** - Remove Wireshark reference.
 * **29.07.20:** - Initial release.
