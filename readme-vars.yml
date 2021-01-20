@@ -28,7 +28,7 @@ param_volumes:
   - { vol_path: "/config", vol_host_path: "/path/to/config", desc: "Users home directory in the container, stores program settings and potentially dump files." }
 param_usage_include_ports: true
 param_ports:
-  - { external_port: "3000", internal_port: "3000", port_desc: "WireShark desktop gui, only use this if you are not using host mode and sniffing Docker network traffic." }
+  - { external_port: "3000", internal_port: "3000", port_desc: "Sqlitebrowser desktop gui, only use this if you are not using host mode and sniffing Docker network traffic." }
 
 # application setup block
 app_setup_block_enabled: true
@@ -40,4 +40,5 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "20.01.21:", desc: "Remove Wireshark reference." }
   - { date: "29.07.20:", desc: "Initial release." }
