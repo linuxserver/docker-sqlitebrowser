@@ -2,8 +2,7 @@
 
 # jenkins variables
 project_name: docker-sqlitebrowser
-external_type: na
-custom_version_command: "curl -sX GET http://ppa.launchpad.net/linuxgndu/sqlitebrowser/ubuntu/dists/bionic/main/binary-amd64/Packages.gz | gunzip -c |grep -A 7 -m 1 'Package: sqlitebrowser' | awk -F ': ' '/Version/{print $2;exit}'"
+external_type: alpine_repo
 release_type: stable
 release_tag: latest
 ls_branch: master
@@ -15,7 +14,10 @@ repo_vars:
   - DOCKERHUB_IMAGE = 'linuxserver/sqlitebrowser'
   - DEV_DOCKERHUB_IMAGE = 'lsiodev/sqlitebrowser'
   - PR_DOCKERHUB_IMAGE = 'lspipepr/sqlitebrowser'
-  - DIST_IMAGE = 'ubuntu'
+  - DIST_IMAGE = 'alpine'
+  - DIST_TAG = '3.15'
+  - DIST_REPO = 'http://dl-cdn.alpinelinux.org/alpine/v3.15/community/'
+  - DIST_REPO_PACKAGES = 'sqlitebrowser'
   - MULTIARCH='true'
   - CI='true'
   - CI_WEB='true'
