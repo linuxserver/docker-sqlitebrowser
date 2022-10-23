@@ -77,6 +77,8 @@ services:
   sqlitebrowser:
     image: lscr.io/linuxserver/sqlitebrowser:latest
     container_name: sqlitebrowser
+    security_opt:
+      - seccomp:unconfined #optional
     environment:
       - PUID=1000
       - PGID=1000
@@ -93,6 +95,7 @@ services:
 ```bash
 docker run -d \
   --name=sqlitebrowser \
+  --security-opt seccomp=unconfined `#optional` \
   -e PUID=1000 \
   -e PGID=1000 \
   -e TZ=Europe/London \
@@ -113,6 +116,7 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Europe/London` | Specify a timezone to use EG Europe/London. |
 | `-v /config` | Users home directory in the container, stores program settings and potentially dump files. |
+| `--security-opt seccomp=unconfined` | For Docker Engine only, many modern gui apps need this to function on older hosts as syscalls are unknown to Docker. |
 
 ## Environment variables from files (Docker secrets)
 
@@ -223,6 +227,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **23.10.22:** - Rebase to Alpine 3.16, migrate to s6v3.
 * **16.02.22:** - Rebase to Alpine.
 * **20.01.21:** - Remove Wireshark reference.
 * **29.07.20:** - Initial release.

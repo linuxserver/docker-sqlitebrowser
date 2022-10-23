@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-rdesktop-web:alpine
+FROM ghcr.io/linuxserver/baseimage-rdesktop-web:3.16
 
 # set version label
 ARG BUILD_DATE
@@ -12,8 +12,12 @@ ENV TITLE=SQLiteBrowser
 
 RUN \
   echo "**** install packages ****" && \
+  if [ -z ${SQLITEB_VERSION+x} ]; then \
+    SQLITEB_VERSION=$(curl -sL "http://dl-cdn.alpinelinux.org/alpine/v3.16/community/x86_64/APKINDEX.tar.gz" | tar -xz -C /tmp \
+    && awk '/^P:sqlitebrowser$/,/V:/' /tmp/APKINDEX | sed -n 2p | sed 's/^V://'); \
+  fi && \
   apk add --no-cache \
-    sqlitebrowser && \
+    sqlitebrowser==${SQLITEB_VERSION} && \
   echo "**** cleanup ****" && \
   rm -rf \
     /tmp/*
@@ -23,4 +27,5 @@ COPY /root /
 
 # ports and volumes
 EXPOSE 3000
+
 VOLUME /config
