@@ -29,6 +29,9 @@ param_volumes:
 param_usage_include_ports: true
 param_ports:
   - { external_port: "3000", internal_port: "3000", port_desc: "Sqlitebrowser desktop gui." }
+opt_security_opt_param: true
+opt_security_opt_param_vars:
+  - { run_var: "seccomp=unconfined", compose_var: "seccomp:unconfined", desc: "For Docker Engine only, many modern gui apps need this to function on older hosts as syscalls are unknown to Docker." }
 
 # application setup block
 app_setup_block_enabled: true
@@ -40,6 +43,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "23.10.22:", desc: "Rebase to Alpine 3.16, migrate to s6v3." }
   - { date: "16.02.22:", desc: "Rebase to Alpine." }
   - { date: "20.01.21:", desc: "Remove Wireshark reference." }
   - { date: "29.07.20:", desc: "Initial release." }
