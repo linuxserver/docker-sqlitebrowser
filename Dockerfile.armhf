@@ -18,6 +18,7 @@ RUN \
   fi && \
   apk add --no-cache \
     sqlitebrowser==${SQLITEB_VERSION} && \
+  sed -i 's|</applications>|  <application title="DB Browser for SQLite" type="normal">\n    <maximized>yes</maximized>\n  </application>\n</applications>|' /etc/xdg/openbox/rc.xml && \
   echo "**** cleanup ****" && \
   rm -rf \
     /tmp/*
