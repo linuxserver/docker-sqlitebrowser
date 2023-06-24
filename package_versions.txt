@@ -9,7 +9,7 @@ accepts                                                                       1.
 alpine-baselayout                                                             3.4.3-r1                                           apk        
 alpine-baselayout-data                                                        3.4.3-r1                                           apk        
 alpine-keys                                                                   2.4-r1                                             apk        
-alpine-release                                                                3.18.0-r0                                          apk        
+alpine-release                                                                3.18.2-r0                                          apk        
 alsa-lib                                                                      1.2.9-r0                                           apk        
 ansi-styles                                                                   4.3.0                                              npm        
 aom-libs                                                                      3.6.1-r0                                           apk        
@@ -51,7 +51,7 @@ cookie                                                                        0.
 cookie-signature                                                              1.0.6                                              npm        
 coreutils                                                                     9.3-r1                                             apk        
 cors                                                                          2.8.5                                              npm        
-cups-libs                                                                     2.4.5-r0                                           apk        
+cups-libs                                                                     2.4.6-r0                                           apk        
 curl                                                                          8.1.2-r0                                           apk        
 dbus                                                                          1.14.8-r0                                          apk        
 dbus-daemon-launch-helper                                                     1.14.8-r0                                          apk        
@@ -61,7 +61,7 @@ debug                                                                         2.
 debug                                                                         4.3.4                                              npm        
 depd                                                                          2.0.0                                              npm        
 destroy                                                                       1.2.0                                              npm        
-device-mapper-libs                                                            2.03.21-r2                                         apk        
+device-mapper-libs                                                            2.03.21-r3                                         apk        
 docker                                                                        23.0.6-r2                                          apk        
 docker-cli                                                                    23.0.6-r2                                          apk        
 docker-cli-buildx                                                             0.10.4-r5                                          apk        
@@ -86,7 +86,7 @@ ffmpeg-libpostproc                                                            6.
 ffmpeg-libswresample                                                          6.0-r14                                            apk        
 ffmpeg-libswscale                                                             6.0-r14                                            apk        
 fftw-single-libs                                                              3.3.10-r2                                          apk        
-file                                                                          5.44-r3                                            apk        
+file                                                                          5.44-r4                                            apk        
 file-uri-to-path                                                              1.0.0                                              npm        
 filelist                                                                      1.0.4                                              npm        
 finalhandler                                                                  1.2.0                                              npm        
@@ -452,7 +452,7 @@ libintl                                                                       0.
 libjpeg-turbo                                                                 2.1.5.1-r3                                         apk        
 libjxl                                                                        0.8.2-r0                                           apk        
 libltdl                                                                       2.4.7-r2                                           apk        
-libmagic                                                                      5.44-r3                                            apk        
+libmagic                                                                      5.44-r4                                            apk        
 libmd                                                                         1.0.4-r2                                           apk        
 libmnl                                                                        1.0.5-r1                                           apk        
 libmount                                                                      2.38.1-r8                                          apk        
@@ -489,7 +489,7 @@ libvdpau                                                                      1.
 libvorbis                                                                     1.3.7-r1                                           apk        
 libvpx                                                                        1.13.0-r1                                          apk        
 libwebp                                                                       1.3.0-r2                                           apk        
-libx11                                                                        1.8.4-r3                                           apk        
+libx11                                                                        1.8.4-r4                                           apk        
 libxau                                                                        1.0.11-r2                                          apk        
 libxaw                                                                        1.0.15-r1                                          apk        
 libxcb                                                                        1.15-r1                                            apk        
@@ -624,7 +624,7 @@ serve-static                                                                  1.
 setprototypeof                                                                1.2.0                                              npm        
 setxkbmap                                                                     1.3.3-r1                                           apk        
 shaderc                                                                       2023.3-r1                                          apk        
-shadow                                                                        4.13-r2                                            apk        
+shadow                                                                        4.13-r4                                            apk        
 shared-mime-info                                                              2.2-r5                                             apk        
 side-channel                                                                  1.0.4                                              npm        
 sigs.k8s.io/json                                                              v0.0.0-20220713155537-f223a00ba0e2                 go-module  
