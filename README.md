@@ -28,7 +28,7 @@ Find us at:
 
 # [linuxserver/sqlitebrowser](https://github.com/linuxserver/docker-sqlitebrowser)
 
-[![Scarf.io pulls](https://scarf.sh/installs-badge/linuxserver-ci/linuxserver%2Fsqlitebrowser?color=94398d&label-color=555555&logo-color=ffffff&style=for-the-badge&package-type=docker)](https://scarf.sh/gateway/linuxserver-ci/docker/linuxserver%2Fsqlitebrowser)
+[![Scarf.io pulls](https://scarf.sh/installs-badge/linuxserver-ci/linuxserver%2Fsqlitebrowser?color=94398d&label-color=555555&logo-color=ffffff&style=for-the-badge&package-type=docker)](https://scarf.sh)
 [![GitHub Stars](https://img.shields.io/github/stars/linuxserver/docker-sqlitebrowser.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver/docker-sqlitebrowser)
 [![GitHub Release](https://img.shields.io/github/release/linuxserver/docker-sqlitebrowser.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver/docker-sqlitebrowser/releases)
 [![GitHub Package Repository](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub%20Package&logo=github)](https://github.com/linuxserver/docker-sqlitebrowser/packages)
@@ -328,6 +328,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **23.05.24:** - Rebase to Alpine 3.20.
 * **10.02.24:** - Update Readme with new env vars and ingest proper PWA icon.
 * **02.01.24:** - Rebase to Alpine 3.19.
 * **13.05.23:** - Rebase to Alpine 3.18.
