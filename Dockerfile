@@ -21,6 +21,7 @@ RUN \
     && awk '/^P:sqlitebrowser$/,/V:/' /tmp/APKINDEX | sed -n 2p | sed 's/^V://'); \
   fi && \
   apk add --no-cache \
+    qt5-qtsvg \
     sqlitebrowser==${SQLITEB_VERSION} && \
   echo "**** cleanup ****" && \
   rm -rf \
