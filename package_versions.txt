@@ -86,7 +86,7 @@ crossbeam-epoch                                                               0.
 crossbeam-queue                                                               0.3.11                                  rust-crate                   
 crossbeam-utils                                                               0.8.19                                  rust-crate                   
 cryptography                                                                  47.0.0                                  python                       
-cups-libs                                                                     2.4.16-r0                               apk                          
+cups-libs                                                                     2.4.18-r0                               apk                          
 curl                                                                          8.17.0-r1                               apk                          
 dario.cat/mergo                                                               v1.0.2                                  go-module   (+1 duplicate)   
 dbus                                                                          1.16.2-r1                               apk                          
