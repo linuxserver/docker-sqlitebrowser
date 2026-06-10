@@ -586,6 +586,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **10.06.26:** - Rebase to Alpine 3.24.
 * **04.04.26:** - Make Wayland default disable with PIXELFLUX_WAYLAND=false.
 * **28.12.25:** - Add Wayland init logic, rebase to Alpine 3.23.
 * **30.07.25:** - Install Qt SVG for icon support.
